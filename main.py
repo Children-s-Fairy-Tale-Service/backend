@@ -7,7 +7,7 @@ app = FastAPI(
 )
 
 origins = [
-    "https://children-fairytale.vercel.app",
+    "https://fairytale-bncrnb5jh-hotaes-projects-9b3c092d.vercel.app",
     "http://localhost:5173",  # React 기본 포트
     "http://127.0.0.1:5173",
 
@@ -15,7 +15,7 @@ origins = [
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],   # GET, POST, PUT, DELETE 전부 허용
     allow_headers=["*"],   # Authorization 포함 모든 헤더 허용
