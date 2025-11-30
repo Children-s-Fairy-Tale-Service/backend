@@ -1,7 +1,7 @@
 # app/core/config.py
 from pydantic_settings import BaseSettings, SettingsConfigDict
-
-
+import os
+print("[DEBUG] OPENAI_API_KEY =", os.environ.get("OPENAI_API_KEY"))
 class Settings(BaseSettings):
     OPENAI_API_KEY: str
     OPENAI_MODEL: str = "gpt-4o"
@@ -11,4 +11,4 @@ class Settings(BaseSettings):
 
 settings = Settings()
 
-print("[DEBUG] settings =", settings)
+
