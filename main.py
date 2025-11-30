@@ -7,7 +7,7 @@ app = FastAPI(
 )
 
 origins = [
-    "https://fairytale-bncrnb5jh-hotaes-projects-9b3c092d.vercel.app",
+    "https://fairytale-hotaes-projects-9b3c092d.vercel.app/",
     "http://localhost:5173",  # React 기본 포트
     "http://127.0.0.1:5173",
 
